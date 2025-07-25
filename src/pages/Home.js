@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import "./Home.css"; // Assuming you have a CSS file for styles
 
 const Home = () => {
   const [states, setStates] = useState([]);
