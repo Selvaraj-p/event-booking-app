@@ -1,0 +1,231 @@
+/* ---------------------------
+   Global Styles
+---------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ---------------------------
+   Navigation Bar
+---------------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #222;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.navbar h1 {
+  font-size: 1.5rem;
+}
+
+.navbar ul {
+  display: flex;
+  list-style: none;
+}
+
+.navbar ul li {
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* ---------------------------
+   Search Section
+---------------------------- */
+.search-section {
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.search-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.search-section select {
+  padding: 8px;
+  margin-right: 10px;
+}
+
+#searchBtn {
+  padding: 8px 16px;
+  background-color: #0073e6;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#searchBtn:hover {
+  background-color: #005bb5;
+}
+
+/* ---------------------------
+   Event List
+---------------------------- */
+.event-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.event-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.event-card h3 {
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.event-card p {
+  margin: 5px 0;
+}
+
+.event-card button {
+  margin-top: 10px;
+  padding: 8px 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.event-card button:hover {
+  background-color: #1f7a31;
+}
+
+/* ---------------------------
+   Booking Interface
+---------------------------- */
+.booking-section {
+  max-width: 800px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.booking-calendar {
+  margin-bottom: 20px;
+}
+
+.time-slots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.time-slot {
+  background-color: #f0f0f0;
+  padding: 10px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.time-slot:hover {
+  background-color: #ddd;
+}
+
+/* ---------------------------
+   My Bookings
+---------------------------- */
+.my-bookings {
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.my-bookings h1 {
+  margin-bottom: 20px;
+}
+
+.booking-item {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+/* ---------------------------
+   Swiper Carousel Styling
+---------------------------- */
+.swiper {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.swiper-slide {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #0073e6;
+}
+
+.swiper-pagination-bullet {
+  background-color: #0073e6;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #005bb5;
+}
+
+/* ---------------------------
+   Responsive Design
+---------------------------- */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .search-section {
+    text-align: center;
+  }
+}
