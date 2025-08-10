@@ -53,7 +53,7 @@ const Home = () => {
             {cities.map((c) => <option key={c} value={c}>{c}</option>)}
           </select>
         </div>
-        <button id="searchBtn" type="submit" style={{ marginTop: "1rem" }}>Search</button>
+        <div id="searchBtn"><button  type="submit" style={{ marginTop: "1rem" }}>Search</button></div>
       </form>
     </div>
   );
