@@ -43,7 +43,7 @@ export default function SearchEvent() {
       }
     };
 
-    if (formData.state != "") {
+    if (formData.state !== "") {
       fetchCities();
     }
   }, [formData.state]);

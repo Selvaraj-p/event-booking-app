@@ -89,7 +89,7 @@ export default function EventCard({
               color="#fff"
               sx={{ opacity: 0.5 }}
             >
-              {details["rating"] == "Not Available"
+              {details["rating"] === "Not Available"
                 ? 0
                 : details["rating"]}
             </Typography>
